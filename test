@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitation de Mariage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container text-center">
+        <div class="row">
+          <div class=" col-md-4">
+    <div class="couple-photo">
+        <img src="PHOTO-2023-12-29-12-45-50 - copie.jpeg" alt="Photo du couple">
+    </div>
+   <div id="d"> 
+    <p  class="nom">Merveille</p>
+    <p>&</p>
+    <p class="nom" >Brice</p>
+    <p class="nom">13.04.2024</p>
+   </div>
+</div>
+<div class="col-md-4 " class="invitation">
+    
+    <p class="pp">CERTAINS DIRONT QU'ILS AVAIENT LE TEMPS,<br> D'AUTRES DIRONT QU'IL ÉTAIT TEMPS.  <br> FINALEMENT, <p>
+    
+    <h2  class="nom">Merveille</h2>
+    <p class="nom">--ET--</p>
+    <h2 class="nom">Brice</h2>
+    <p class="pp">
+        ONT L'IMMENSE JOIE DE VOUS FAIRE PART DE LEUR <span class="nom"> Mariage</span>  <br> LE SAMEDI 13 AVRIL 2024.
+    </p>
+    <P class="pp">
+        LA CÉRÉMONIE CIVILE SERA CÉLÉBRÉE À BANGUI À 09H30.
+    </P>
+    <P class="pp">
+        VOTRE PRÉSENCE SERA POUR NOUS UN HONNEUR <br> ET UNE SOURCE DE BONHEUR.
+    </P>
+    <p>
+        <img src="71FQyVPybVL._AC_UF1000,1000_QL80_.jpg" alt="Photo" id="img">
+    </p>
+
+</div>
+        </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div id="message">
+                    <h3>Un message spécial du couple</h3> 
+                    <p id="m">Chers amis et famille, <br><br>J'espère que ce message vous trouve bien. Tout d'abord, merci infiniment d'avoir confirmé votre présence à notre mariage 
+                        signifie énormément pour nous.<br><br>
+
+                        Nous sommes actuellement en train de finaliser les détails logistiques, y compris l'envoi des billets et des programmes. Pour garantir une organisation optimale, 
+                        nous vous prions de bien vouloir confirmer votre présence d'ici la fin du mois de février.<br><br>
+                        Votre coopération nous aidera à planifier au mieux cet événement spécial. Une fois que nous aurons toutes les confirmations,
+                         nous procéderons à l'envoi des billets avec les programmes détaillés.<br><br>
+ 
+                         Merci beaucoup pour votre compréhension et hâte de célébrer ce moment magique avec vous !<br><br> Bien à vous, <br><br> <em>Merveille et Brice</em></p>
+                        
+                </div>
+                
+                <div id="form">
+                    <form action="confirmation.php" method="post">
+                        <label for="name">Nom :</label>
+                        <input type="text" id="nom" name="nom" required>
+    
+                        <label for="prenom">Prénom :</label>
+                        <input type="test" id="prenom" name="prenom" required>
+    
+                        <label for="confirmation">Je confirme ma présence :</label>
+                        <select id="confirmation" name="confirmation" required>
+                            <option value="oui">Oui</option>
+                            <option value="non">Non</option>
+                        </select>
+    
+                        <button type="submit">Confirmer</button>
+                    </form>
+                </div>
+            </div>
+        </footer>
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+  <script src="script.js"></script>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    
+   
+}
+
+.invitation {
+    background-color: #a96656;
+}
+
+.couple-photo {
+    margin-top: 20px;
+}
+
+.couple-photo img {
+    max-width: 100%;
+}
+
+#img {
+    font-size: small;
+    max-width: 30%;
+}
+
+p {
+    color: #555555;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+h2 {
+    color: #c7b557;
+}
+
+span {
+    color: #c7b557;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.details {
+    margin-top: 20px;
+}
+
+#d {
+    background-color: #d1b83e;
+    height: 50%;
+    font-size: 30px;
+    padding: 30px;
+}
+
+.nom {
+    font-family: cursive;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #e1ded1;
+    color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+em {
+    text-align: center;
+    font-family: cursive;
+    font-weight: bold;
+    margin-left: 170px;
+    color: #7c7119;
+    font-size: 30px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+#message,
+#form {
+    flex: 1;
+    max-width: 600px;
+    margin-bottom: 40px;
+}
+
+#m {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.pp {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+form {
+    margin-top: 50px;
+}
+
+h3 {
+    text-align: center;
+    color: #7c7119;
+    text-decoration: underline;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input,
+select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; 
+}
+
+button {
+    background-color: #ff5733;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%; 
+}
+
+@media (max-width: 768px) {
+    
+    #d {
+        font-size: 20px;
+    }
+}
+
+body {
+    font-size: 16px;
+}
+
+
+@media (max-width: 576px) {
+    /* .row {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    } */
+    .container {
+        flex-direction: column; 
+
+    #d {
+        height: 70%; /* Ajustez la hauteur automatiquement */
+        padding: 10px;
+    }
+
+    .couple-photo img {
+        margin-bottom: 20px; /* Ajoutez un espace entre la photo du couple et le texte */
+    }
+
+    /
+    h2, .nom, .pp {
+        font-size: 18px;
+    }
+
+    em {
+        margin-left: 0; 
+    }
+
+    #message, #form {
+        max-width: 80%; 
+    }
+}
+}
